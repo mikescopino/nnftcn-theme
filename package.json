@@ -1,8 +1,8 @@
 {
     "name": "nonfiction",
-    "description": "A customized version of Casper.",
-    "demo": "https://demo.ghost.io",
-    "version": "2.1.10",
+    "description": "The Nonfiction blog theme",
+    "demo": "",
+    "version": "0.1",
     "engines": {
         "ghost": ">=1.2.0"
     },
