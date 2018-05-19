@@ -12,11 +12,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- Styles'n'Scripts --}}
-    <link href="/css/reset.css" rel="stylesheet">
+    <!-- <link href="/css/reset.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{{asset "built/reset.css"}}"
+
     <link rel="stylesheet" href="https://use.typekit.net/ioz4ipz.css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700">
     <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" />
-    <link href="/css/base.css" rel="stylesheet">
+
+    <!-- <link href="/css/base.css" rel="stylesheet"> -->
+    <link rel="stylesheet" type="text/css" href="{{asset "built/base.css"}}" />
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
