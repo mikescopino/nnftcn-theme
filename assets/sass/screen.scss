@@ -26,7 +26,7 @@ production stylesheet in assets/built/screen.css
 
 /* 1. Global - Set up the things
 /* ---------------------------------------------------------- */
-@import "global.css";
+
 
 body {
    /* background: #f4f8fb;*/
@@ -1093,33 +1093,33 @@ Usage (In Ghost editor):
     border-color: color(var(--lightgrey) l(-2%));
 }
 
-.subscribe-form button {
-    display: inline-block;
-    margin: 0 0 0 10px;
-    padding: 0 20px;
-    height: 41px;
-    outline: none;
-    color: #fff;
-    font-size: 1.5rem;
-    line-height: 37px;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
-    background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
-    );
-    border-radius: 5px;
-    box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
-
-    -webkit-font-smoothing: subpixel-antialiased;
-}
+// .subscribe-form button {
+//     display: inline-block;
+//     margin: 0 0 0 10px;
+//     padding: 0 20px;
+//     height: 41px;
+//     outline: none;
+//     color: #fff;
+//     font-size: 1.5rem;
+//     line-height: 37px;
+//     font-weight: 400;
+//     text-align: center;
+//     text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+//     background: linear-gradient(
+//     color(var(--blue) whiteness(+7%)),
+//     color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+//     color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+//     color(var(--blue) lightness(-4%) saturation(-10%))
+//     );
+//     border-radius: 5px;
+//     box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+//
+//     -webkit-font-smoothing: subpixel-antialiased;
+// }
 
 .subscribe-form button:active,
 .subscribe-form button:focus {
-    background: color(var(--blue) lightness(-9%) saturation(-10%));
+    //background: color(var(--blue) lightness(-9%) saturation(-10%));
 }
 
 @media (max-width: 650px) {
@@ -1782,33 +1782,33 @@ Usage (In Ghost editor):
     border-color: color(var(--lightgrey) l(-2%));
 }
 
-.subscribe-overlay button {
-    display: inline-block;
-    margin: 0 0 0 15px;
-    padding: 0 25px;
-    height: 52px;
-    outline: none;
-    color: #fff;
-    font-size: 1.7rem;
-    line-height: 37px;
-    font-weight: 400;
-    text-align: center;
-    text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
-    background: linear-gradient(
-    color(var(--blue) whiteness(+7%)),
-    color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
-    color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
-    color(var(--blue) lightness(-4%) saturation(-10%))
-    );
-    border-radius: 8px;
-    box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
-
-    -webkit-font-smoothing: subpixel-antialiased;
-}
+// .subscribe-overlay button {
+//     display: inline-block;
+//     margin: 0 0 0 15px;
+//     padding: 0 25px;
+//     height: 52px;
+//     outline: none;
+//     color: #fff;
+//     font-size: 1.7rem;
+//     line-height: 37px;
+//     font-weight: 400;
+//     text-align: center;
+//     text-shadow: 0 -1px 0 rgba(0,0,0,0.1);
+//     background: linear-gradient(
+//     color(var(--blue) whiteness(+7%)),
+//     color(var(--blue) lightness(-7%) saturation(-10%)) 60%,
+//     color(var(--blue) lightness(-7%) saturation(-10%)) 90%,
+//     color(var(--blue) lightness(-4%) saturation(-10%))
+//     );
+//     border-radius: 8px;
+//     box-shadow: 0 0 0 1px inset rgba(0,0,0,0.14);
+//
+//     -webkit-font-smoothing: subpixel-antialiased;
+// }
 
 .subscribe-overlay button:active,
 .subscribe-overlay button:focus {
-    background: color(var(--blue) lightness(-9%) saturation(-10%));
+    //background: color(var(--blue) lightness(-9%) saturation(-10%));
 }
 
 .subscribe-overlay-close {
@@ -1913,4 +1913,3 @@ Usage (In Ghost editor):
         margin-left: 0;
     }
 }
-
