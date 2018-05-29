@@ -69,12 +69,12 @@ html {
 /*/////////////////////////////////////////*/
 
 .post-card {
-    flex: 1 1 300px;
+    flex: 1 1 20rem;
     display: flex;
     flex-direction: column;
     overflow: hidden;
     margin: 0 20px 40px;
-    min-height: 300px;
+    min-height: 30rem;
     background: #fff center center;
     background-size: cover;
     border-radius: 5px;
@@ -114,7 +114,7 @@ html {
 
 .post-card-tags {
   display: block;
-  padding-top: $size-1;
+  padding-top: $size-2;
   padding-left: $size-2;
   padding-right: $size-2;
   font-size: $size-00;
@@ -153,7 +153,7 @@ h2.post-card-title {
 
 .post-card-meta {
   padding: $size-000 $size-2;
-  font-size: $size-0;
+  font-size: $size-00;
   line-height: $size-1;
   color: $text-muted;
 }
@@ -182,12 +182,6 @@ h2.post-card-title {
             flex: 0 1 357px;
         }
 
-        h2 {
-        }
-
-        p {
-        }
-
         .post-card-content-link {
             padding: 30px 40px 0;
         }
@@ -206,12 +200,6 @@ h2.post-card-title {
             flex: 0 1 357px;
         }
 
-        h2 {
-        }
-
-        p {
-        }
-
         .post-card-content-link {
             padding: 30px 40px 0;
         }
@@ -224,14 +212,26 @@ h2.post-card-title {
 }
 
 .home-template .site-header:after {
-    display: none;
+  display: none;
 }
 
 @media (max-width: 650px) {
-    .post-feed {
-        padding-top: 5vw;
-    }
-    .post-card {
-        margin: 0 20px 5vw;
-    }
+  .post-feed {
+      padding-top: 5vw;
+  }
+
+  .post-card {
+      margin: 0 20px 5vw;
+  }
+
+  .post-card-tags,
+  h2.post-card-title,
+  .post-card-excerpt {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+
+  .post-card-meta {
+    display: none;
+  }
 }
