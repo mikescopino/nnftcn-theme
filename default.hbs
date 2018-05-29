@@ -13,16 +13,16 @@
 
     {{!-- RESET --}}
     {{!-- PROD --}} {{!-- <link href="/css/reset.css" rel="stylesheet"> --}}
-    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/reset.css"}}"
+    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/reset.css"}}">
 
     {{!-- FONTS --}}
     <link rel="stylesheet" href="https://use.typekit.net/ioz4ipz.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700,400">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     {{!-- BASE --}}
     {{!-- PROD --}} {{!-- <link href="/css/base.css" rel="stylesheet"> --}}
-    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/base.css"}}" />
+    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/base.css"}}" />
 
 
     {{!-- CRUTCH --}}
@@ -59,7 +59,9 @@
 
   <!-- Interface -->
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  <script src="/js/interface.js"></script>
+  {{!-- RESET --}}
+  {{!-- PROD --}} {{!-- <script src="/js/interface.js"></script> --}}
+  {{!-- LOCAL --}}<script src="{{asset "built/local/interface.js"}}"></script>
 
   <!-- Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88487010-1"></script>
