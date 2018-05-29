@@ -1,7 +1,60 @@
-body {
-  background: #fff;
-}
+/*/////////////////////////////////////////*/
+/* ￼Variables */
+/*/////////////////////////////////////////*/
 
+$text: #333;
+$text-muted: #748699;
+$text-link: #03b1cb;
+$nf-green: #6ebf4b;
+$base: #fff;
+$rule: #ebeff2;
+
+// Decimal measurements, 20px default text
+$define-rem: 10px;
+$scale: 1.25;
+
+$size-1: 2rem;
+$size-0: $size-1 / $scale;
+$size-00: $size-0 / $scale;
+$size-000: $size-00 / $scale;
+$size-2: $size-1 * $scale;
+$size-3: $size-2 * $scale;
+$size-4: $size-3 * $scale;
+$size-5: $size-4 * $scale;
+$size-6: $size-5 * $scale;
+$size-7: $size-6 * $scale;
+$size-8: $size-7 * $scale;
+$size-9: $size-8 * $scale;
+
+$line-1: 100%;
+$line-0: $line-1 / $scale;
+$line-00: $line-0 / $scale;
+$line-000: $line-00 / $scale;
+$line-2: $line-1 * $scale;
+$line-3: $line-2 * $scale;
+$line-4: $line-3 * $scale;
+$line-5: $line-4 * $scale;
+$line-6: $line-5 * $scale;
+$line-7: $line-6 * $scale;
+$line-8: $line-7 * $scale;
+$line-9: $line-8 * $scale;
+
+$regular: 400;
+$medium: 600;
+$bold: 700;
+$black: 900;
+
+$shadow: 0 2px 5px rgba(0,0,0,.1);
+$shadow-hover: 0 3px 20px rgba(0,0,0,.3);
+
+/*/////////////////////////////////////////*/
+/* ￼Global */
+/*/////////////////////////////////////////*/
+
+html {
+  background: $base;
+  font-size: $define-rem;
+}
 
 .post-feed {
     position: relative;
@@ -10,6 +63,10 @@ body {
     margin: 0 -20px;
     padding: 40px 0 0 0;
 }
+
+/*/////////////////////////////////////////*/
+/* Overview */
+/*/////////////////////////////////////////*/
 
 .post-card {
     flex: 1 1 300px;
@@ -21,14 +78,14 @@ body {
     background: #fff center center;
     background-size: cover;
     border-radius: 5px;
-    box-shadow: rgba(39,44,49,0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    box-shadow: $shadow;
     transition: all 0.5s ease;
-}
 
-.post-card:hover {
-    box-shadow: 0 0 1px rgba(39,44,49,0.10), 0 3px 16px rgba(39, 44, 49,0.07);
-    transition: all 0.3s ease;
-    transform: translate3D(0, -1px, 0);
+    &:hover {
+      box-shadow: $shadow-hover;
+      transition: all 0.3s ease;
+      transform: translate3D(0, -1px, 0);
+    }
 }
 
 .post-card-image-link {
@@ -48,59 +105,59 @@ body {
 .post-card-content-link {
     position: relative;
     display: block;
-    padding: 25px 25px 0;
-    color: var(--darkgrey);
-}
+    padding: 2.5rem 2.5rem 0 2.5rem;
 
-.post-card-content-link:hover {
-    text-decoration: none;
+    &:hover {
+      text-decoration: none;
+    }
 }
 
 .post-card-tags {
-    display: block;
-    margin-bottom: 4px;
-    color: var(--midgrey);
-    font-size: 1.2rem;
-    line-height: 1.15em;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
+  display: block;
+  padding-top: $size-1;
+  padding-left: $size-2;
+  padding-right: $size-2;
+  font-size: $size-00;
+  line-height: $size-1;
+  text-transform: uppercase;
+  letter-spacing: .01rem;
+  color: $text-muted;
 }
 
-.post-card-title {
-    margin-top: 0;
+h2.post-card-title {
+  margin-top: 0;
+  padding-left: $size-2;
+  padding-right: $size-2;
+
+  a {
+    text-decoration: none;
+
+    &:hover {
+      color: #333;
+    }
+  }
 }
 
 .post-card-content {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .post-card-excerpt {
-    font-family: Georgia, serif;
+  padding-bottom: $size-00;
+  padding-left: $size-2;
+  padding-right: $size-2;
 }
 
 .post-card-meta {
-    padding: 0 25px 25px;
+  padding: $size-000 $size-2;
+  font-size: $size-0;
+  line-height: $size-1;
+  color: $text-muted;
 }
 
-.author-profile-image {
-    margin-right: 5px;
-    width: 25px;
-    height: 25px;
-    border-radius: 100%;
-
-    object-fit: cover;
-}
-
-.post-card-author {
-    font-size: 1.3rem;
-    font-weight: 500;
-    letter-spacing: 0.5px;
-    text-transform: uppercase;
-}
 
 @media (min-width: 795px) {
     .home-template .post-feed {
@@ -126,12 +183,9 @@ body {
         }
 
         h2 {
-            font-size: 2.6rem;
         }
 
         p {
-            font-size: 1.8rem;
-            line-height: 1.55em;
         }
 
         .post-card-content-link {
@@ -153,12 +207,9 @@ body {
         }
 
         h2 {
-            font-size: 2.6rem;
         }
 
         p {
-            font-size: 1.8rem;
-            line-height: 1.55em;
         }
 
         .post-card-content-link {
