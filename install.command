@@ -1,0 +1,13 @@
+npm install cssnano
+npm install gulp
+npm install gulp-autoprefixer
+npm install gulp-livereload
+npm install gulp-postcss
+npm install gulp-sourcemaps
+npm install gulp-util
+npm install gulp-watch
+npm install gulp-sass
+npm install gulp-zip
+npm install postcss-color-function
+npm install postcss-custom-properties
+npm install postcss-easy-import
