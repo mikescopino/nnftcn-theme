@@ -1,5 +1,25 @@
 {{!< default}}
 
+{{#contentFor "opengraph"}}
+
+    <!-- FB open graph tags -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://nonfiction.io/blog" />
+    <meta property="og:title" content="The Forever Pace" />
+    <meta property="og:description" content="A design blog from Nonfiction, a Boston design studio that helps businesses create intuitive SaaS products and rewarding B2B customer experiences." />
+    <meta property="og:image" content="http://nonfiction.io/img/nonfiction-branding.jpg" />
+
+    <!-- Twitter card tags additive with the og: tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:domain" value="http://nonfiction.io/blog" />
+    <meta name="twitter:title" value="The Forever Pace" />
+    <meta name="twitter:description" value="A design blog from Nonfiction, a Boston design studio that helps businesses create intuitive SaaS products and rewarding B2B customer experiences." />
+    <meta name="twitter:image" content="http://nonfiction.io/img/nonfiction-branding.jpg" />
+    <meta name="twitter:url" value="http://www.nonfiction.io" />
+
+{{/contentFor}}
+
+
 <header class="header center">
   <div class="container">
     <h1 class="lg headline">{{@blog.title}}</h1>

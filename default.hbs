@@ -34,6 +34,9 @@
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
 
+    {{!-- This tag outputs opengraph meta for the index page --}}
+    {{{block "opengraph"}}}
+
 </head>
 <body class="{{body_class}}" data-note="push3.1">
   {{> "site-nav"}}
