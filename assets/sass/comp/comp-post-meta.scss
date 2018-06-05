@@ -1,0 +1,174 @@
+.post-full-meta {
+  padding-top: 4rem;
+
+  .container {
+    border-top: .1rem solid $rule;
+    padding: $size-3 1rem;
+  }
+
+  .post-published {
+    text-align: center;
+
+    .post-author-img {
+      display: inline-block;
+      width: 4.5rem;
+      height: 4.5rem;
+      margin-right: $size-0;
+      border-radius: 5rem;
+    }
+
+    .post-meta-details {
+      text-align: center;
+      padding: 0;
+
+      .post-author-name {
+        font-size: $size-0;
+        line-height: $line-2;
+        font-weight: $medium;
+      }
+
+      .post-date  {
+        display: block;
+        font-size: $size-00;
+        line-height: $line-2;
+        color: $text-muted;
+        font-weight: $regular;
+      }
+    }
+  }
+
+  .post-tags {
+    padding-top: 2rem;
+    font-size: $size-00;
+    line-height: $line-3;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    a {
+      display: inline-block;
+      color: $text-muted;
+      text-decoration: none;
+      padding: .3rem .8rem;
+      margin-bottom: .8rem;
+      border-radius: .4rem;
+      background: $base-gray;
+
+      &:hover {
+        color: $text;
+        background: $rule;
+      }
+    }
+  }
+}
+
+/*/////////////////////////////////////////*/
+/* Phablet */
+/*/////////////////////////////////////////*/
+
+@media #{$media-phablet} {
+  .post-full-meta {
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: $size-3 0;
+    }
+
+    .post-published {
+      display: flex;
+      flex: 1 1 50%;
+      flex-wrap: wrap;
+
+      .post-author-img {
+        display: flex;
+        justify-content: flex-start;
+      }
+
+      .post-meta-details {
+        display: flex;
+        text-align: left;
+        padding: 0;
+
+        .post-author-name {
+          padding-top: .5rem;
+        }
+
+        .post-date  {
+          line-height: $line-3;
+        }
+      }
+    }
+
+    .post-tags {
+      width: 50%;
+      padding-top: .5rem;
+      text-align: left;
+
+      a {
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+
+/*/////////////////////////////////////////*/
+/* Tablet */
+/*/////////////////////////////////////////*/
+
+@media #{$media-tablet} {
+  .post-full-meta {
+    padding: 0;
+
+    .container {
+      padding: $size-3 0;
+    }
+
+    .post-published {
+      .post-author-img {
+        width: 5.5rem;
+        height: 5.5rem;
+        margin-right: $size-0;
+      }
+
+      .post-meta-details {
+        .post-author-name {
+          padding-top: 0;
+          font-size: $size-1;
+          line-height: $line-3;
+        }
+
+        .post-date  {
+          display: block;
+          font-size: $size-0;
+          line-height: $line-3;
+        }
+      }
+    }
+
+    .post-tags {
+
+      a {
+        &:hover {
+        }
+      }
+    }
+  }
+}
+
+/*/////////////////////////////////////////*/
+/* Notebook */
+/*/////////////////////////////////////////*/
+
+@media #{$media-notebook} {
+
+}
+
+/*/////////////////////////////////////////*/
+/* Desktop */
+/*/////////////////////////////////////////*/
+
+@media #{$media-desktop} {
+
+}
