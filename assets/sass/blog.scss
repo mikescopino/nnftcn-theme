@@ -5,7 +5,9 @@
 $text: #333;
 $text-muted: #748699;
 $text-link: #03b1cb;
+$text-error: #dc3545;
 $nf-green: #6ebf4b;
+$nf-blue: #0C7CB5;
 $base: #fff;
 $rule: #ebeff2;
 $base-gray: #f4f6f9;
@@ -47,6 +49,7 @@ $black: 900;
 
 $font-sans: 'Inter UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 $font-serif: 'Source Serif Pro', 'Georgia', serif;
+$font-sans-headline: 'good-headline-web-pro-wide', 'Inter UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 
 $shadow: 0 2px 5px rgba(0,0,0,.1);
 $shadow-hover: 0 3px 20px rgba(0,0,0,.3);
@@ -87,3 +90,4 @@ html {
 @import './comp/comp-header.scss';
 @import './comp/comp-post.scss';
 @import './comp/comp-post-meta.scss';
+@import './comp/comp-signup.scss';

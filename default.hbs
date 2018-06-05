@@ -12,8 +12,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     {{!-- RESET --}}
-    {{!-- PROD --}} <link href="/css/reset.css" rel="stylesheet">
-    {{!-- LOCAL --}} {{!-- <link rel="stylesheet" type="text/css" href="{{asset "built/local/reset.css"}}"> --}}
+    {{!-- PROD --}} {{!-- <link href="/css/reset.css" rel="stylesheet"> --}}
+    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/reset.css"}}">
 
     {{!-- FONTS --}}
     <link rel="stylesheet" href="https://use.typekit.net/ioz4ipz.css">
@@ -21,8 +21,12 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
     {{!-- BASE --}}
-    {{!-- PROD --}} <link href="/css/base.css" rel="stylesheet">
-    {{!-- LOCAL --}} {{!-- <link rel="stylesheet" type="text/css" href="{{asset "built/local/base.css"}}" /> --}}
+    {{!-- PROD --}} {{!-- <link href="/css/base.css" rel="stylesheet"> --}}
+    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/base.css"}}" />
+
+
+    {{!-- CRUTCH --}}
+    <!-- <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" /> -->
 
     {{!-- BLOG --}}
     <link rel="stylesheet" type="text/css" href="{{asset "built/blog.css"}}" />
@@ -59,8 +63,8 @@
   <!-- Interface -->
   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   {{!-- RESET --}}
-  {{!-- PROD --}} <script src="/js/interface.js"></script>
-  {{!-- LOCAL --}} {{!-- <script src="{{asset "built/local/interface.js"}}"></script> --}}
+  {{!-- PROD --}} {{!-- <script src="/js/interface.js"></script> --}}
+  {{!-- LOCAL --}}<script src="{{asset "built/local/interface.js"}}"></script>
 
   <!-- Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88487010-1"></script>
