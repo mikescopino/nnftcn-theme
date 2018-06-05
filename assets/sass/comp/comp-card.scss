@@ -85,6 +85,15 @@
   }
 }
 
+.related-posts .post-card .post-card-content {
+  padding-bottom: 3rem;
+  
+  .post-card-excerpt,
+  .post-card-meta {
+    display: none;
+  }
+}
+
 /*/////////////////////////////////////////*/
 /* Phablet */
 /*/////////////////////////////////////////*/
