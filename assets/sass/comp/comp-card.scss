@@ -147,6 +147,30 @@
       }
     }
   }
+
+  .blog-home .post-feed {
+    .post-card:nth-child(6n+1):not(.no-image) {
+      flex: 1 1 100%;
+      flex-direction: row;
+      max-width: none;
+
+      .post-card-image-link {
+        position: relative;
+        flex: 1 1 auto;
+        border-radius: 5px 0 0 5px;
+
+        .post-card-image {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .post-card-content {
+        flex: 0 1 357px;
+      }
+    }
+  }
 }
 
 /*/////////////////////////////////////////*/
