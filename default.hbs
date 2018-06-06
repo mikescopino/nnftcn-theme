@@ -11,25 +11,9 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    {{!-- RESET --}}
-    {{!-- PROD --}} {{!-- <link href="/css/reset.css" rel="stylesheet"> --}}
-    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/reset.css"}}">
-
-    {{!-- FONTS --}}
-    <link rel="stylesheet" href="https://use.typekit.net/ioz4ipz.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:700,400">
-    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-
-    {{!-- BASE --}}
-    {{!-- PROD --}} {{!-- <link href="/css/base.css" rel="stylesheet"> --}}
-    {{!-- LOCAL --}} <link rel="stylesheet" type="text/css" href="{{asset "built/local/base.css"}}" />
-
-
-    {{!-- CRUTCH --}}
-    <!-- <link rel="stylesheet" type="text/css" href="{{asset "built/screen.css"}}" /> -->
-
-    {{!-- BLOG --}}
-    <link rel="stylesheet" type="text/css" href="{{asset "built/blog.css"}}" />
+    {{!-- CSS --}}
+    {{!-- {{> "site-css"}} --}}
+    {{> "site-css-local"}}
 
     {{!-- This tag outputs SEO meta+structured data and other important settings --}}
     {{ghost_head}}
@@ -38,7 +22,7 @@
     {{{block "opengraph"}}}
 
 </head>
-<body class="{{body_class}}" data-note="push3.1">
+<body class="{{body_class}}">
   {{> "site-nav"}}
 
   {{{body}}}
@@ -60,22 +44,9 @@
   <script src="{{asset "js/infinitescroll.js"}}"></script>
   {{/if}}
 
-  <!-- Interface -->
-  <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
-  {{!-- RESET --}}
-  {{!-- PROD --}} {{!-- <script src="/js/interface.js"></script> --}}
-  {{!-- LOCAL --}}<script src="{{asset "built/local/interface.js"}}"></script>
-
-  <!-- Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-88487010-1"></script>
-  <script>
-    if (document.location.hostname.search("www.nonfiction.io") !== -1) {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'UA-88487010-1');
-    }
-  </script>
+  {{!-- Javascript --}}
+  {{!-- {{> "site-js"}} --}}
+  {{> "site-js-local"}}
 
   {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
   {{{block "scripts"}}}
