@@ -20,13 +20,13 @@ It's a good idea to keep this template as minimal as possible in terms of both f
 <body class="error-template">
   {{> "site-nav"}}
 
-  <header class="header center pad-bot-6">
-    <div class="container pad-top-7">
-      <h1 class="lg headline">{{code}} &ndash; {{message}}</h1>
-      <p>A problem has occured. The page you were looking for can't be found.</p>
-      <a class="error-link" href="{{@blog.url}}">Go to the front page →</a>
-    </div>
-  </header>
+  <header class="header focus">
+      <div class="container">
+          <h1 class="xs stroke">404 Error</h1>
+          <h2 class="lg  headline"><span class="one">We&#8217;re sorry, but the page you&#8217;re looking for can&#8217;t be found.</span></h2>
+          <p>You may want to try one of the links at the top of the page or <a href="/" title="Go to the homepage">visit the homepage</a>.</p>
+      </div>
+    </header>
 
 </body>
 </html>
