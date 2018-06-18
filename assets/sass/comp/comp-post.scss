@@ -43,9 +43,9 @@
   }
 
   blockquote {
-      margin: 0 0 $size-1 $size-000;
-      padding: $size-1 $size-0 0 $size-0;
-      border-left: $rule .4rem solid;
+      margin: $size-0 0 $size-0 0;
+      padding: 0 0 0 $size-1;
+      border-left: $rule .5rem solid;
 
       p {
           color: inherit;
@@ -54,8 +54,12 @@
           font-style: italic;
       }
 
+      p:first-child {
+        margin-top: 0;
+      }
+
       p:last-child {
-          margin-bottom: 0;
+        margin-bottom: 0;
       }
   }
 }
@@ -92,6 +96,27 @@
       padding-top: .2rem;
       margin-right: .8rem;
       border-bottom: .3rem solid $rule;
+    }
+
+    blockquote {
+      margin: $size-1 0 $size-1 $size-000;
+      padding: 0 $size-0 0 $size-3;
+      border-left: $rule .5rem solid;
+
+      p {
+          color: inherit;
+          font-size: inherit;
+          line-height: inherit;
+          font-style: italic;
+      }
+
+      p:first-child {
+        margin-top: 0;
+      }
+
+      p:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }
