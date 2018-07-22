@@ -1,19 +1,20 @@
 .signup {
   padding: 0 1rem 0 1rem;
-  text-align: center;
 
-  h3 {
-    padding-bottom: 0;
+  h4 {
+    padding: $size-00 0 0 0;
   }
 
   p {
-    padding-top: $size-000;
+    padding: $size-1 0 0 0;
+    text-transform: uppercase;
+    font-weight: $medium;
   }
 
   .mc-field-group {
     position: relative;
     display: block;
-    padding-top: 1rem;
+    padding-top: 3rem;
 
     label {
       display: none;
@@ -22,17 +23,19 @@
     input.email {
       display: block;
       width: 100%;
-      padding: .8rem 1.25rem;
-      margin-bottom: 1rem;
+      padding: 1.2rem 1.5rem;
+      margin-bottom: 1.2rem;
       box-sizing: border-box;
-      border: .2rem solid $rule;
+      border: none;
       border-radius: 4rem;
       font-family: $font-sans;
       font-size: $size-0;
       font-weight: $regular;
       color: $text;
+      background: darken($base-gray, 10%);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
+      transition: background-color .2s;
 
       &::placeholder {
         color: $text-muted;
@@ -41,17 +44,17 @@
       &:active,
       &:focus {
         outline: none;
-        border-color: darken($rule, 15%);
+        background: $base;
       }
     }
 
     input.btn {
       display: block;
       width: 100%;
-      padding: 1rem 0;
+      padding: 1.3rem 0;
       border: none;
       border-radius: 4rem;
-      font-family: $font-sans-headline;
+      font-family: $font-sans;
       font-size: $size-0;
       font-weight: $bold;
       line-height: $line-1;
@@ -59,19 +62,19 @@
       text-decoration: none;
       text-align: center;
       color: $base;
-      background: $text-muted;
+      background: darken($text-muted, 10%);
       cursor: pointer;
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
       transition: background-color .2s;
 
       &:hover {
-    		background: darken($text-muted, 20%);
+    		background: $text-muted;
       }
 
       &:active,
       &:focus {
-        background: $text-muted;
+    		background: $text-muted;
         color: $base;
         text-decoration: none;
         outline: none;
@@ -128,28 +131,14 @@
 @media #{$media-phablet} {
 
   .signup {
-    padding: $size-3 0 0 0;
+    padding: 0;
 
     .mc-field-group {
-      display: inline-block;
 
       input.email {
-        float: left;
-        display: inline-block;
-        width: 28rem;
-        margin: 0;
-        padding: 1rem 1.5rem;
-        border-right: none;
-        border-radius: 4rem 0 0 4rem;
       }
 
       input.btn {
-        float: left;
-        width: auto;
-        display: inline-block;
-        margin: 0;
-        padding: 1.3rem 1.5rem 1.3rem 1.5rem;
-        border-radius:  0 4rem 4rem 0;
       }
     }
 
@@ -167,19 +156,39 @@
 
 @media #{$media-tablet} {
   .signup {
-    padding: 0 0 $size-7 0;
+    padding: 0;
 
     .mc-field-group {
       input.email {
-        width: 36rem;
-        padding: 1rem 2.5rem;
-        font-size: $size-1;
+        float: left;
+        display: inline-block;
+        width: 28rem;
+        margin: 0;
+        padding: 1.1rem 2rem;
+        border-right: none;
+        border-radius: 4rem 0 0 4rem;
+        font-size: $size-0;
       }
 
       input.btn {
-        padding: 1.4rem 2.5rem 1.4rem 2.5rem;
-        font-size: $size-1;
+        float: left;
+        width: auto;
+        display: inline-block;
+        margin: 0;
+        border-radius:  0 4rem 4rem 0;
+        padding: 1.2rem 1.5rem 1.3rem 1.5rem;
+        font-size: $size-0;
         line-height: $line-1;
+
+        &:hover {
+        }
+
+        &:active,
+        &:focus {
+          color: $base;
+          text-decoration: none;
+          outline: none;
+        }
       }
     }
   }
@@ -190,7 +199,35 @@
 /*/////////////////////////////////////////*/
 
 @media #{$media-notebook} {
+  .signup {
+    padding: 0 0 $size-7 9rem;
 
+    .mc-field-group {
+      input.email {
+        float: left;
+        display: inline-block;
+        width: 28rem;
+        margin: 0;
+        padding: 1.1rem 2rem;
+        border-right: none;
+        border-radius: 4rem 0 0 4rem;
+        font-size: $size-0;
+      }
+
+      input.btn {
+        background: darken($text-muted, 20%);
+
+        &:hover {
+          background: darken($text-muted, 10%);
+        }
+
+        &:active,
+        &:focus {
+          background: darken($text-muted, 10%);
+        }
+      }
+    }
+  }
 }
 
 /*/////////////////////////////////////////*/
@@ -198,5 +235,13 @@
 /*/////////////////////////////////////////*/
 
 @media #{$media-desktop} {
+  .signup {
+    padding: 0 0 $size-7 2rem;
 
+    .mc-field-group {
+      input.email {
+        width: 25rem;
+      }
+    }
+  }
 }

@@ -1,0 +1,139 @@
+.blog-footer {
+  padding: 4rem 0 0 0;
+  color: $base;
+  background: $base-dark;
+
+  .bio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 1rem 4rem 1rem;
+
+    .copy {
+      flex: 100%;
+      padding: 0 0 3rem 0;
+    }
+
+    .callout {
+      flex: 100%;
+      padding: 1rem 1rem 3rem 1rem;
+      background: lighten($base-dark, 10%);
+    }
+  }
+
+  .footer {
+    border: none;
+
+    a {
+      color: darken($text-muted, 10%);
+
+      &:hover {
+        color: $text-muted;
+      }
+    }
+    .social a {
+      color: darken($text-muted, 20%);
+
+      &:hover {
+        color: $text-muted;
+      }
+    }
+  }
+}
+
+
+/*/////////////////////////////////////////*/
+/* Phablet */
+/*/////////////////////////////////////////*/
+
+@media #{$media-phablet} {
+  .blog-footer {
+
+    .bio {
+      padding: 0 3rem 5rem 3rem;
+
+      .copy {
+      }
+
+      .callout {
+        padding: 2rem 2.5rem 3.5rem 2.5rem;
+      }
+    }
+
+  }
+}
+
+
+/*/////////////////////////////////////////*/
+/* Tablet */
+/*/////////////////////////////////////////*/
+
+@media #{$media-tablet} {
+  .blog-footer {
+    padding: 5rem 0 0 0;
+
+    .bio {
+
+      .copy {
+        padding: 0 0 4rem 0;
+      }
+
+      .callout {
+        padding: 2rem 2.5rem 3rem 2.5rem;
+      }
+    }
+  }
+}
+
+/*/////////////////////////////////////////*/
+/* Notebook */
+/*/////////////////////////////////////////*/
+
+@media #{$media-notebook} {
+  .blog-footer {
+    padding: 7rem 0 0 0;
+
+    .bio {
+      max-width: 96rem;
+
+      .copy {
+        flex: 50%;
+        padding: 0;
+      }
+
+      .callout {
+        flex: 50%;
+        padding: 0;
+        background: none;
+      }
+    }
+  }
+}
+
+/*/////////////////////////////////////////*/
+/* Desktop */
+/*/////////////////////////////////////////*/
+
+@media #{$media-desktop} {
+  .blog-footer {
+    padding: 11rem 0 0 0;
+
+    .bio {
+      max-width: 118rem;
+      padding: 0 0 9rem 0;
+
+      .copy {
+        flex: 67%;
+
+        p {
+          padding-right: 12rem;
+        }
+      }
+
+      .callout {
+        flex: 33%;
+        padding: 0
+      }
+    }
+  }
+}

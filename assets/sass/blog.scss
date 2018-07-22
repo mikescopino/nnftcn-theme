@@ -9,8 +9,9 @@ $text-error: #dc3545;
 $nf-green: #6ebf4b;
 $nf-blue: #0C7CB5;
 $base: #fff;
-$rule: #ebeff2;
 $base-gray: #f4f6f9;
+$base-dark: #121923;
+$rule: #ebeff2;
 
 // Decimal measurements, 20px default text
 $define-rem: 10px;
@@ -87,6 +88,7 @@ html {
 /*/////////////////////////////////////////*/
 
 @import './comp/comp-card.scss';
+@import './comp/comp-footer.scss';
 @import './comp/comp-header.scss';
 @import './comp/comp-post.scss';
 @import './comp/comp-post-meta.scss';
