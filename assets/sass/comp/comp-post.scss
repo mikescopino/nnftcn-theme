@@ -42,6 +42,18 @@
     }
   }
 
+  ol {
+    font-size: $size-0;
+    line-height: $line-3;
+    padding: $size-000 0 $size-00 0;
+
+    li {
+      padding: 0 0 $size-000 0;
+      margin-left: $size-2;
+      list-style: decimal;
+    }
+  }
+
   blockquote {
       margin: $size-0 0 $size-0 0;
       padding: 0 0 0 $size-1;
@@ -157,6 +169,18 @@
         padding: 0 0 $size-000 $size-000;
         margin-left: $size-4;
         list-style: disc;
+      }
+    }
+
+    ol {
+      font-size: $size-1;
+      line-height: $line-3;
+      padding: $size-0 0 $size-1 0;
+
+      li {
+        padding: 0 0 $size-000 $size-000;
+        margin-left: $size-4;
+        list-style: decimal;
       }
     }
   }
